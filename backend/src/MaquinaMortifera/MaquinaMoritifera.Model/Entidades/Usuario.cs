@@ -9,5 +9,6 @@ namespace MaquinaMoritifera.Model.Entidades
         public string Senha { get; set; }
 
         public string Nome { get; set; }
+
     }
 }

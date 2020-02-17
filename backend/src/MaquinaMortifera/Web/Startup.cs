@@ -12,6 +12,8 @@ namespace Web
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -22,7 +24,7 @@ namespace Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
+            services.AddCors();
             services.AddClassesMatchingInterfaces(typeof(IUsuarioRepositorio).Assembly);
             services.AddClassesMatchingInterfaces(typeof(IUsuarioService).Assembly);
             services.AddClassesMatchingInterfaces(typeof(IUnitOfWork).Assembly);
@@ -38,6 +40,8 @@ namespace Web
             }
 
             app.UseRouting();
+
+            app.UseCors(cors => cors.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
             app.UseAuthorization();
 

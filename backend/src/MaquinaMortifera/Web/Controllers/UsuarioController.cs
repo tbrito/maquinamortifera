@@ -35,7 +35,7 @@ namespace Web.Controllers
         public void Post([FromBody] string value)
         {
         }
-
+        
         // PUT: api/Usuario/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
