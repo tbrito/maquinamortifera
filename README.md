@@ -2,8 +2,8 @@
 
 Este projeto será um láboratório para novos desenvolvedores. Nossa intenção com este projeto é 
 
-(1) Desenvolver conhecimento em novos desenvolvedores;
-(2) Praticar com um ambiente de desenvolvimento real;
+* Desenvolver conhecimento em novos desenvolvedores;
+* Praticar com um ambiente de desenvolvimento real;
 
 ## Tecnologias
 
